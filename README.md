@@ -21,34 +21,57 @@ In this project we're goiung to walk through how to create an active directory h
 <h2>Program walk-through:</h2>
 
 <p align="center">
-Launch the utility: <br/>
-<img src="https://i.imgur.com/62TgaWL.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+While installing Windows server give Administrator a Password: <br/>
+<img src="https://i.imgur.com/TM8xdWB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-Select the disk:  <br/>
-<img src="https://i.imgur.com/tcTyMUE.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+Install the DHCP role from add roles and features:  <br/>
+<img src="https://i.imgur.com/TtARKYl.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-Enter the number of passes: <br/>
-<img src="https://i.imgur.com/nCIbXbg.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+Create a new scope: <br/>
+<img src="https://i.imgur.com/HTDEAmy.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-Confirm your selection:  <br/>
-<img src="https://i.imgur.com/cdFHBiU.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+DHCP scope configuration:  <br/>
+<img src="https://i.imgur.com/oAlSMsH.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-Wait for process to complete (may take some time):  <br/>
-<img src="https://i.imgur.com/JL945Ga.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+DHCP scope configuration:  <br/>
+<img src="https://i.imgur.com/vwUP5pv.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-Sanitization complete:  <br/>
-<img src="https://i.imgur.com/K71yaM2.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+DHCP scope configuration:  <br/>
+<img src="https://i.imgur.com/fDImKNT.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-Observe the wiped disk:  <br/>
-<img src="https://i.imgur.com/AeZkvFQ.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+Activate the scope:  <br/>
+<img src="https://i.imgur.com/PA5lTsW.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+ <br />
+<br />
+The client machine is able to get the IP from windows server:  <br/>
+<img src="https://i.imgur.com/8QKPx6X.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+Now install the ADDS Role from add roles and features:  <br/>
+<img src="https://i.imgur.com/Vgnluif.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+ <br />
+<br />
+Promote the server to Domain controler:  <br/>
+<img src="https://i.imgur.com/873zxbN.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+Give FQDN for domain controler:  <br/>
+<img src="https://i.imgur.com/Eu03Z6D.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+After resatart the screen should look like this:  <br/>
+<img src="https://i.imgur.com/iRRrQsx.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+For client system go to > properties > advance system settings > change name > enter domain name:  <br/>
+<img src="https://i.imgur.com/QWuT1lh.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
-
 <!--
  ```diff
 - text in red
